@@ -18,8 +18,8 @@ class EventAdmin(admin.ModelAdmin):
     search_fields = ["title"]
 
 
-@admin.register(models.EventMember)
-class EventMemberAdmin(admin.ModelAdmin):
-    model = models.EventMember
-    list_display = ["id", "event", "user", "created_at", "updated_at"]
-    list_filter = ["event"]
+# @admin.register(models.EventMember)
+# class EventMemberAdmin(admin.ModelAdmin):
+#     model = models.EventMember
+#     list_display = ["id", "event", "user", "created_at", "updated_at"]
+#     list_filter = ["event"]

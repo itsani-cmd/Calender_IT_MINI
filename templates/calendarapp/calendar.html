@@ -95,7 +95,7 @@
             right: 'dayGridMonth,timeGridWeek,timeGridDay,list'
           },
           initialDate: today,
-          navLinks: true, // can click day/week names to navigate views
+          // navLinks: true, // can click day/week names to navigate views
           selectable: true,
           selectMirror: true,
           select: function(arg) {
@@ -111,6 +111,8 @@
 
           // bangladesh Holidays
           // events: 'bn.bd#holiday@group.v.calendar.google.com',
+
+          //add jquery
           eventClick: function(arg) {
             if (confirm('Are you sure you want to delete this event?')) {
               arg.event.remove()
